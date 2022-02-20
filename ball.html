@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball</title>
+    <style>
+        #ball{
+            /* Ancho */
+            width: 100px;
+            /* Altura */
+            height: 100px;
+            background-color: blueviolet;
+            /* ajustar la posicion*/
+            margin: 50px auto;
+            position: relative;
+        /* Redondear el cuadro, hacer circulo */
+            border-radius: 50%;
+
+            /*Animaciones
+            Nombre de la animacion*/
+            animation-name: bounce;
+            /*frecuencia de la animacion*/
+            animation-duration: 1s;
+            /*Tiempo que dura la animacion*/
+            animation-iteration-count: infinite;
+        } /* terminan los ajustes del style, el keyframe es externo*/
+
+            /*en el keyframe se agrega el nombre de la animacion*/
+            @keyframes bounce{
+                0%{
+                    top: 0px;
+                }
+                50%{
+                    top:249px;
+                    width:130px;
+                    height:70px;
+                }
+                100%{
+                    top: 0px;
+                }
+            }
+
+   
+    </style>
+</head>
+<body>
+    <div id="ball"></div>
+</body>
+</html>
