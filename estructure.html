@@ -42,13 +42,41 @@
     <h1>Main</h1>
 <section id="goals">
    <h1>Section 1</h1> 
-
+<figure>
+    figure
+    <figcaption>
+        Something
+    </figcaption>
+</figure>
     <article id="one">
-       <h2> Article 1</h2>
+       <h2> Formulario</h2>
+       <form action="#">
+       <!--El atributo (Id) debe contener el mismo nombre del label (atributo for) -->
+        <label for="email">e-mail</label>
+        <input type="text" id="email" name="email">
+        <input type="submit" id="submit" name="submit">
+
+        <fieldset>
+            <legend>What is your favorite color?</legend>
+            <input type="radio" name="one" id="one" value="pink">
+            <label for="one"> Pink </label>
+            <input type="radio" name="one" id="two" value="blue">
+            <label for="two">Blue</label>
+            
+        </fieldset>
+        <label for="selectDate"> Select Date</label>
+        <input type="date" id="selectDate" name="date">
+       </form>
     </article>
 
     <article id="two">
        <h2> Article 2</h2>
+    <audio controls>
+        <source src="https://music.youtube.com/watch?v=s2gtQJiM5Zg&feature=share" type="music/mp3">
+    </audio>
+    </article>
+    <article>
+        <a href="https://music.youtube.com/watch?v=s2gtQJiM5Zg&feature=share" accesskey="y" > Youtube Music </a>
     </article>
 
 </section>
